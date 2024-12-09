@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas OL e UL</title>
+</head>
+<body>
+    <h1>trabalhando com Listas</h1>
+    <h2>Lista Ordenadas</h2>
+    <!--Essa tag <ol> permite criar uma lista ordenada e valor padrão da lista é numerada EX: 1,2,3,4,5... -->
+        <!--A tag <li> </li> o fechamento dessa tag é OPCIONAL segundo a W3C.-->
+    <ol>
+        <li>Acordar</li>
+        <li>Escovar os dentes e banhar</li>
+        <li>Comer</li>
+        <li>Ir a faculdade</li>
+        <li>Regresso em casa assim que as aulas terminarem</li>
+        <li>Almoçar</li>
+    </ol>
+    <!--O TYPE serve para escolher como vai ser o modelo da tua lista-->
+    <h2>Vamos Criar uma lista Usando o alfabéto Maiúsculo</h2>
+    <ol type="A"> <!-- aqui no TYPE temos: 1 A a I i-->
+        <li>André Pimenta</li>
+        <li>Bernardo Ferraz</li>
+        <li>Carlos Camunganbué</li>
+        <li>Domingas Catandala</li>
+        <li> Dom Matias </li>
+        <li>Anderson Marrom</li>
+        <li>Astro Boy e Amândio</li>
+    </ol>
+
+    <!--Também podemos usar o parâmetro START que vai indicar o inicío da letra ou numero ou algarismo da tua lista que pretendes começar.  Ex: <ol type="A" start="J"     -->
+        <ol type="I" start="10">
+            <li>Jonilson</li>
+            <li>Pimenta</li>
+        </ol>
+
+        <h2>Listas não Ordenadas</h2>
+        <ul type=""> <!--  Listas não Ordenadas No  Type temos: disc  circle   square--> 
+             <!--O disc é o valor padrão do type-->
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+        </ul>
+
+        <h2>Misturando as lista Ordenadas e não Ordenadas</h2>
+        <h3>Minhas linguagens favoritas</h3>
+        <p>Neste exemplo só juntei as Listas Ordenadas com as listas ordenadas; ou melhor as tags &lt;ol&gt; &lt;/ol&gt; e as tags &lt;li&gt; &lt;/li&gt; </p>
+        <ol>
+            <li>Antigas</li>
+            <ol type="A">
+                <li>Lingagem C</li>
+                <li>Linguagem C++</li>
+                <li>Linguagem C#</li>
+                <li>Java</li>
+            </ol>
+        <!--O correcto seria Tanto a Linguagem Antiga e a Nova tinha que começar da letra a até a D; Mas vamos deixar assim só já pra fazer de uma outra maneira, para lembrar facílmente-->
+            <li>Novais</li>
+            <ol type="A" start="5">
+                <li>PHP</li>
+                <li>Java Script</li>
+                <li>Python</li>
+                <li>Kotlin</li>
+
+
+            </ol>
+        </ol>
+
+        <h2>Também podemos misturar ou juntar listas ordenada e não Ordenadas</h2>
+        <h3>Meus videos games favoritos</h3>
+        <!--Misturando listas ordenadas e listas não ordenadas-->
+        <ol>
+            <li>Sega</li>
+            <ul type="disc">
+                <li>Mortal Kombate</li>
+                    <ul type="circle">
+                        <li>Jax</li>
+                        <li>Sub-zero Ninja</li>
+                    </ul>
+                <li>Sonic</li>
+                    <ul type="circle">
+                        <li>Azul</li>
+                    </ul>
+                <li>Maicon</li>
+                <li>footebol</li>
+            </ul>
+            <li>Consola</li>
+            <ul type="disc">
+                <li>De se dar tiro</li>
+            </ul>
+            <li>PSP</li>
+            <ul type="disc">
+                <li>San Adrea</li>
+                <li>Vai City</li>
+                <li>footebol</li>
+            </ul>
+            <li>PlayStation</li>
+            <ul type="disc">
+                <li>footebol</li>
+                <li>Hommem Aranha</li>
+                <li>GTA</li>
+                <li>San Adrea</li>
+            </ul>
+            <li>XBOX</li>
+            <ul type="disc">
+                <li>Corrida de carro</li>
+            </ul>
+            <li>DVD</li>
+            <ul type="disc">
+                <li>Contra</li>
+            </ul>
+        </ol>
+       
+       <!--Exemplo Básico-->
+        <h3>Minhas equipas favoritas</h3>
+        <ol>
+            <li>Man United</li>
+            <ul type="disc">
+                <li>Englaterra</li>
+            </ul>
+            <li>Real Madrid</li>
+            <ul type="disc">
+                <li>Espanha</li>
+            </ul>
+            <li>Sporting</li>
+            <ul type="square">
+                <li>Portugal</li>
+            </ul>
+            <li>Dortimund</li>
+            <ul>
+                <li>Alemamha</li>
+            </ul>
+            <li>PSG</li>
+            <ul>
+                <li>França</li>
+            </ul>
+        </ol>
+
+        
+        <!--As listas de definição: É acomo se fosse um dicíonario,temos os termos e as suas descrições.  Nas listas de definição temos as tags <dl> </dl> que são as (Lista de Definição);   Também temos a tag <dt> </dt> que é a (Termo de definição) e por fim temos as tag <dd> </dd> que é (Descrição da difinição)-->
+
+        <h2>Listas de Definação</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para criação de sites.</dd>
+
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para criação do design de um site.</dd>
+
+            <dt>Javascript (JS)</dt>
+            <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+        </dl>
+
+
+
+
+        <h2>Estou muito ancioso para começar já com a próxima aula de Criação de Links <br> Eu vou ser um Excelênte Programador. <br> João Pimenta o Programador &#x1f596;  &#x1f913;</h2>
+
+
+
+
+
+</body>
+</html>

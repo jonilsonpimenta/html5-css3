@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+    <style>
+        /* OBS: Também podemos mudar um elemento BOX-LEVEL para um elemento INLINE-LEVEL e INLINE-LEVEL para um BOX-LEVEL. Basta inserir o Display:inline; Deves inserir esse comando num elemento BOX-LEVEL.
+
+        Para alterar o INLINE-LEVEL para um BOX-LEVEL deves inserir o: Display: block; 
+        
+        Também podemos usar o Display: inline-block; Essa combinação tornará um elemento a ser inline e a terá algumas características de BOX-LEVEL.
+        */
+        
+        h1{ /*  O H1 é um elemento BOX-LEVEL*/
+
+            /*Também podemos usar a propriedade Shorthand para esses elementos como: Border; Padding; Margin; Outline.  */
+
+            /* Propriedade Shorthand para o Border:
+                 Border: 10px solid red;
+             */
+
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+             /* Propriedade Shorthand para o Padding:
+               Nota: que o padding a sua configuração funciona como a de um relógio.
+             */
+             padding: 10px 10px 10px 10px; 
+             
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            
+             /* Propriedade Shorthand para a Margem:
+                Margin:10px 7px 20px 17px;  
+
+                Se queres centralizar usando o shorthand basta fazer: Margin:10px auto 20px auto;
+              */
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+
+
+            /* Propriedade Shorthand para o outline :*/
+            outline: 5px solid brown;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: brown;
+    
+        
+        }
+
+        a{  /*  A de Ancora é um elemento INLINE-LEVEL*/
+            border-width: 10px;  
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são  Exemplo de box-level, mas o <a href="">links são exemplos de caixas inline-level</a> vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>

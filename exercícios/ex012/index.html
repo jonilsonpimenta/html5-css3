@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserido vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!--A tag para inserir video é a tag <video src=""> </video>
+    Também dentro da tag <video> encotramos o parâmetro width que define a largura do video na sua tela; também encontramos o parâmetro Poster que permti inserir um frames ou seja imagem que servirá como a imagem inicial para o vídeo. 
+        É importante inserir todos os vídeos, mas com arquivos diferentes devido a compatibilidade dos navegadores;
+    A ordem dos sources é importante -->
+   
+    <!--O parâmetro loop permite repetir o vídeo muitas vezes, quando o vídeo terminar ou chegar ao fim sem ter que dar o play novamente. -->
+    <video  width="500" poster="imagens/foto-500.png" controls
+     autoplay loop> 
+        <source src="midias/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midias/Meu-Video.webm.webm" type="video/webm">
+        <source src="midias/Meu-Video.m4v.mkv" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+
+    </video>
+
+    <h1>Inserido vídeo do youtube</h1>
+
+    <h1>Inserido vídeo do vimeo</h1>
+</body>
+</html>
