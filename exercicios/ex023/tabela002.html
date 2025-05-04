@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body,h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        table{
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr> th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd){ /* 2n-1*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /* 2n*/
+            background-color: lightgray;
+        }
+
+        td,th{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .numero{
+            text-align: right;
+        }
+        marquee{
+            margin-top: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE = tabela
+            THEADE = cabeça da tabela;  (tr, td, th).
+            TBOBY = corpo da tabela; (tr, td, th).
+            TFOOT = pé da tabela; (tr, td, th).
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> 
+                <th scope="col" style="width: 50px;">População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Luanda</td>
+                <td class="numero">45.919.049</td>
+
+            </tr> 
+            <tr>
+                <td>Benguela</td>
+                <td class="numero">30.5000.149</td>
+
+            </tr> 
+            <tr>
+                <td>Huíla</td>
+                <td class="numero">29.519.048</td>
+
+            </tr> 
+            <tr>
+                <td>Huambo</td>
+                <td class="numero">23.209.100</td>
+
+            </tr> 
+            <tr>
+                <td>Malanje</td>
+                <td class="numero">20.350.100</td>
+
+            </tr> 
+            <tr>
+                <td>Cuanza-Norte</td>
+                <td class="numero">20.329.200</td>
+
+            </tr> 
+            <tr>
+                <td>Cuanza-Sul</td>
+                <td class="numero">19.209.200</td>
+
+            </tr>  
+            <tr>
+                <td>Bié</td>
+                <td class="numero">19.119.490</td>
+
+            </tr> 
+            <tr>
+                <td>Bengo</td>
+                <td class="numero">19.000.090</td>
+
+            </tr> 
+            <tr>
+                <td>Cuando</td>
+                <td class="numero">18.800.100</td>
+
+            </tr> 
+            <tr>
+                <td>Cuando Cubango</td>
+                <td class="numero">17.900.090</td>
+
+            </tr> 
+            <tr>
+                <td>Moxico</td>
+                <td class="numero">16.100.202</td>
+
+            </tr> 
+            <tr>
+                <td>Moxico Leste</td>
+                <td class="numero">15.000.000</td>
+
+            </tr> 
+            <tr>
+                <td>Zaire</td>
+                <td class="numero">14.120.100</td>
+
+            </tr> 
+            <tr>
+                <td>Lunda-Norte</td>
+                <td class="numero">14.0000.000</td>
+
+            </tr> 
+            <tr>
+                <td>Lunda-Sul</td>
+                <td class="numero">13.790.100</td>
+
+            </tr> 
+            <tr>
+                <td>Uíge</td>
+                <td class="numero">13.519 149</td>
+
+            </tr> 
+            <tr>
+                <td>Cabinda</td>
+                <td class="numero">13.123.049</td>
+
+            </tr> 
+            <tr>
+                <td>Icolo e Bengo</td>
+                <td class="numero">12.023.000</td>
+
+            </tr> 
+            <tr>
+                <td>Namibe</td>
+                <td class="numero">11.200.100</td>
+
+            </tr> 
+            <tr>
+                <td>Cunene</td>
+                <td class="numero">11.193.120</td>
+
+            </tr> 
+            <tr>
+                <td>Viana</td>
+                <td class="numero">10.110.100</td>
+
+            </tr> 
+            <tr>
+                <td>Cazenga</td>
+                <td class="numero">9.500.200</td>
+
+            </tr> 
+            <tr>
+                <td>Imgonbotas</td>
+                <td class="numero">8.252.900</td>
+
+            </tr> 
+            <tr>
+                <td>Mulenvos</td>
+                <td class="numero">7.000.000</td>
+
+            </tr> 
+            <tr>
+                <td>Mainga</td>
+                <td class="numero">6.000.000</td>
+
+            </tr> 
+    </tbody>
+        <tfoot>
+                <tr>
+                    <th scope="row"> Total de Habitantes</th>
+                    <td class="numero"><strong>1000.700.125</strong></td>
+                </tr>
+        </tfoot>       
+    </table>
+
+    <marquee behavior="" direction="right">
+        <p>João Felipe Gonçalo Pimenta</p>
+    </marquee> 
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit atque suscipit, veritatis doloremque eligendi possimus, nostrum natus esse quod laudantium omnis, nisi labore neque eaque. Vero in libero sequi ipsa.
+        Fugit, vero libero ab ipsa perspiciatis molestiae quo veritatis odit eaque voluptatum dolor architecto provident debitis explicabo? Veniam natus sunt ducimus perspiciatis, non reiciendis eum, vitae magni maiores corporis sint.
+        Repellat voluptatem sed accusamus illum quibusdam minima nostrum ipsa? Repellendus fugit labore quisquam voluptatem quis quia qui aut ab natus at aliquam maxime adipisci tenetur illum velit, debitis asperiores itaque!
+        Dolores temporibus cum id expedita dignissimos ducimus corrupti officia placeat quia iusto eaque sint doloremque, ab amet aspernatur ullam autem ex voluptate incidunt maiores error, a cupiditate. Perspiciatis, mollitia excepturi.
+        Omnis, odit! Delectus assumenda deleniti quos ut tenetur quidem explicabo impedit error consectetur! Quia voluptate libero quaerat qui nostrum quidem corrupti vitae sunt et repellat, enim veniam esse amet inventore.
+        Officia accusamus eligendi expedita ducimus voluptatum ad molestias illo nulla vero odio, sed, reprehenderit tempora repudiandae commodi, facere animi in velit? Adipisci qui, harum ipsum neque quam deserunt animi dolorem.
+        Amet vel voluptatum maiores! Placeat unde, sit iste voluptatibus sunt enim est, laudantium quis doloribus assumenda dolor eaque laboriosam provident vitae esse nobis aliquam possimus, quia temporibus recusandae nisi eum?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perferendis tenetur, perspiciatis sequi, reprehenderit doloremque, natus dolorem velit tempora delectus repudiandae architecto animi deserunt exercitationem iure illo? Cumque, dolores harum.
+        Voluptates odit harum, sint quam maiores voluptatem, adipisci magnam mollitia minus asperiores sed accusamus illum tenetur? Quia, deleniti iusto magnam exercitationem libero labore culpa quae corporis rerum quibusdam quasi explicabo.
+        Voluptatum cupiditate repudiandae nulla repellendus vero obcaecati et deleniti? Molestiae rem repudiandae ipsum labore unde aliquam perferendis magnam dolorum? Cupiditate culpa voluptatum non, iure a facilis? Dolorum quia molestias vel!
+        Eligendi laborum officia qui ea optio dicta voluptatibus, dolores rem odit voluptatum omnis natus unde esse dolore voluptates impedit iure earum necessitatibus sunt ad quibusdam sequi commodi itaque! Necessitatibus, cum.
+        Corrupti ullam quo incidunt eos. Ex voluptas numquam, deserunt vel ullam voluptates nobis nisi totam perferendis quia corporis molestias eligendi minus fugit. Amet quis natus quas eos mollitia debitis iste!
+        Aliquam modi maiores autem provident odit aperiam optio adipisci quae atque fuga doloribus expedita ad, ex unde. Iusto officiis facere animi rem exercitationem eaque non, veritatis, placeat impedit quos recusandae.
+        Similique voluptatem earum omnis harum quibusdam facilis eligendi, tempore quae molestiae, impedit odio. Eius voluptates suscipit ipsam sint recusandae ad mollitia asperiores quos rem incidunt temporibus, doloribus id debitis ab.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perferendis tenetur, perspiciatis sequi, reprehenderit doloremque, natus dolorem velit tempora delectus repudiandae architecto animi deserunt exercitationem iure illo? Cumque, dolores harum.
+        Voluptates odit harum, sint quam maiores voluptatem, adipisci magnam mollitia minus asperiores sed accusamus illum tenetur? Quia, deleniti iusto magnam exercitationem libero labore culpa quae corporis rerum quibusdam quasi explicabo.
+        Voluptatum cupiditate repudiandae nulla repellendus vero obcaecati et deleniti? Molestiae rem repudiandae ipsum labore unde aliquam perferendis magnam dolorum? Cupiditate culpa voluptatum non, iure a facilis? Dolorum quia molestias vel!
+        Eligendi laborum officia qui ea optio dicta voluptatibus, dolores rem odit voluptatum omnis natus unde esse dolore voluptates impedit iure earum necessitatibus sunt ad quibusdam sequi commodi itaque! Necessitatibus, cum.
+        Corrupti ullam quo incidunt eos. Ex voluptas numquam, deserunt vel ullam voluptates nobis nisi totam perferendis quia corporis molestias eligendi minus fugit. Amet quis natus quas eos mollitia debitis iste!
+        Aliquam modi maiores autem provident odit aperiam optio adipisci quae atque fuga doloribus expedita ad, ex unde. Iusto officiis facere animi rem exercitationem eaque non, veritatis, placeat impedit quos recusandae.
+        Similique voluptatem earum omnis harum quibusdam facilis eligendi, tempore quae molestiae, impedit odio. Eius voluptates suscipit ipsam sint recusandae ad mollitia asperiores quos rem incidunt temporibus, doloribus id debitis ab.
+    </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi deleniti, fuga incidunt dignissimos ea in saepe porro sit perspiciatis? Nobis explicabo laboriosam fuga dolores aliquid eaque consequuntur enim aperiam praesentium.</p>
+    
+</body>
+</html>
