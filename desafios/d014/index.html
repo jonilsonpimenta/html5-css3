@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio final</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            padding: 5px;
+            text-align: center;
+            color: white;
+            background-color: gray;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+        }
+        th.cabecalho{
+            text-align: center;
+            color: white;
+            background-color: dimgray;
+        }
+        .cabecalholinha{
+            text-align: left;
+            color: white;
+            background-color: dimgray;
+        }
+        td.linha{
+            text-align: center;
+            color: white;
+            background-color: dimgray;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        marquee{
+            margin-top: 20px;
+            background-color: dimgrey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio de tabelas para o capítulo 21</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col" class="cabecalho">Área</th>
+                <th rowspan="2" scope="col" class="cabecalho">Disciplinas</th>
+                <th colspan="2" scope="colgroup" class="cabecalho">Notas</th>
+                <th rowspan="2" scope="col" class="cabecalho">Média</th>
+            </tr>
+            <tr>
+                <th scope="col" class="cabecalho">Nota1</th>
+                <th scope="col" class="cabecalho">Nota2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>20</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>19</td>
+                <td>19</td>
+                <td>19</td>
+
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>18</td>
+                <td>18</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>17</td>
+                <td>17</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="cabecalholinha">Média de Exatas</th>
+                <td class="linha">19</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>Hitória</td>
+                <td>17</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Geográfia</td>
+                <td>16</td>
+                <td>16</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="cabecalholinha">Média de Humanas</th>
+                <td class="linha">17</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <marquee behavior="" direction="right">
+        <p>Desafio concluído com sucesso, por João Pimenta</p>
+    </marquee>
+    
+</body>
+</html>
