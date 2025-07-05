@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de texto e Senha</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+            background-color: lightblue;
+        }
+        form{
+            background-color: rgba(57, 146, 230, 0.527);
+            width: 700px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="isuario">Usuário:</label>
+            <input type="text" name="usuario" id="isuario" required placeholder="Digite o nome de usuario" minlength="7" maxlength="20" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required placeholder="Digite uma senha forte" minlength="7" maxlength="20" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
