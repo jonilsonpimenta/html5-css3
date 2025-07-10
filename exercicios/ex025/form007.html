@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 07</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Município do Getto">
+                    <option value="VN">Viana</option>
+                    <option value="CZ">Cazenga</option>
+                    <option value="MV">Mulenvos</option>
+                    <option value="CC">Cacuaco</option>
+                </optgroup>
+
+                <optgroup label="Município da Cidade">
+                    <option value="RG">Rangel</option>
+                    <option value="MT">Mutamba</option>
+                    <option value="BL">Belas</option>
+                    <option value="MG">Mainga</option>
+                </optgroup>
+            </select>
+        </p>
+
+            
+            
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="profissao" id="iprof" list="ilista">
+            
+            <datalist id="ilista">
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+                <option value="MED">Médico</option>
+                <option value="EMP">Empresário</option>
+                <option value="ADM">Administrador</option>
+                <option value="EMF">Enfermeiro</option>
+                <option value="FAA">Miltar</option>
+                <option value="POL">Policía</option>
+                <option value="ELE">Electricista</option>
+            </datalist>   
+        </p>  
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite a sua mensagem"></textarea>
+        </p>  
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
