@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">  
+</head> 
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+       <!-- Outra forma de usar o icon de menu. Através do formato de imagem svsg
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> 
+        -->
+
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
+            <ul type="disc">
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cupiditate optio aliquam praesentium. Fugiat in nisi illum. Laudantium, provident incidunt? Obcaecati, cumque dolore hic beatae sit corporis molestias dolorum labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi optio mollitia eaque voluptas animi aperiam quae amet at corrupti. Accusantium mollitia aliquam, nulla natus beatae cupiditate architecto? Itaque, sapiente?
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quaerat. Inventore fugiat, dolorem nulla incidunt in architecto doloribus molestias a numquam, nostrum facilis repellat eaque optio, id deserunt dolor et! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quod pariatur ad atque id voluptatum modi neque, in commodi, sit tenetur. Cupiditate non beatae incidunt autem repellat provident delectus tenetur?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptates quidem temporibus? Adipisci, exercitationem fuga. Sunt esse magni laborum tempore assumenda aliquam ipsam provident soluta commodi accusamus! Perspiciatis, accusamus rerum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam perferendis natus, culpa nulla eius reprehenderit ipsa velit? Veniam, ipsum maxime voluptas quae esse est! Autem reprehenderit quo sunt repudiandae explicabo.
+            </p>
+        </article>
+    </main>
+    <script>
+           
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                itens.style.display = 'bock'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+       
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    
+</body>
+</html>
